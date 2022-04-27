@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+        }
+        section button{
+            background-color: tomato;
+            text-align: center;
+            color: black;
+            padding: 25px;
+            border-radius: 25px 0px;
+            box-shadow: 25px 0px  25px red ;
+            animation: ease-in-out 1sec none;
+        }
+        section button:hover{
+            background-color: tomato;
+            text-align: center;
+            color: black;
+            padding: 25px;
+            border-radius: 25px 0px;
+            box-shadow: 25px 0px  25px rgb(39, 16, 141) ;
+            animation: ease-in-out 1sec none;
+        }
+        .mk{
+            margin-top: 20px;
+            display: block;
+            width: 200px;
+            border-radius: 25px 25px 0px 0px ;
+            border-color: black 1px;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative;">
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119" height="99" viewBox="0 0 119 99" fill="none">
+            <rect width="119" height="99" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_2_3" transform="translate(0.0840336) scale(0.0092437 0.0111111)"/>
+            </pattern>
+            <image id="image0_2_3" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFQ0lEQVR4nO2dXWgcVRTH/2e2+SBZd0NMKuQDBFOQtmDAUhT6LKam4ktfGhQUpAiC+qQvQvrgg/rig4LkRSwWxSCIyWabqtWiolWD++Bn2aKl24S6m2g232vmHh9C6LSdmZ2duTO7c/f+njZ7zj3n7j+7d+fccycBNBqNRqPRaKKArD/09R3rSPxnvg5gDEDaYcQSAzlD4EPR3nm6UJjciGCesecmoQf3Hn0bjJM1jL/MwjhRWJz+XvK8lMO48XDcAOOJGsffQ4b4on/v6INSZ6UgRnWXqnQYLCZ7eh69Q0IsZUncePglp5P7BgEc8hEn1ULmank9/5WsianGTe9obu18AaA3AfzrI9STkuakJFTdxcrxxGDP+nEQv29nNQTtv7KY+U3GxFSjxjV60rxaynwAYM7OKhJ4RMKclMTXlyERZ2wNLLTQDvgSWpgJe6FBR+7ueqwryIRUxZfQhcVDPwK4bmPaI1oqDwWbkpr4vI4eFwCydhaGXqft8F2wEBzWaWAEGJdRCCmFb0FaTZwDoWJj6u2/6+LhAHNSEt9C55eyZWJ8YxtUkF4+biHQR5zZfvnQ6/TtBBLaBE/bPU/AcH/3yECQ2KoRSOj50tk/AMrbmIgMjASJrRo17nXczkDv0TcIeE7GZGILYQnMp1PF5Iu/YNLuAiH4fjQRzwSNEXsY3QA9X+5dfdXJJbDQbSlcAGg1aBxFeNzJEFjofD67BYhPg8ZRA3LUU0oFx0x6+djhayeDFKETMDMAWEasOMMgx0+2FKGvlGYXAP5JRqw4I9g852STt/lDhtMmU7NQ2Kkr7JEmNDt1XZoEAs662aUJXbh++AfYNwOaBdcrL4n7xuMCYNffqsKI7ZbEeTcHqRv0hKZdp+fm56dKbg5ShW41xaxDM0Bx2PFqYxepQrs1A1SG2X19BiQLvZO06a4+1tq78F01J+lCJ3hPswl9fme/xx3pQv+1OPW7QzNASdzKbiuhHAtgNM8etVvZbSUUoR3P5qmHa9ltJRSh21K4QMBKGLEbiWplt5VQhM7ns1vM+DyM2A2G54ZHaEe3GFB9+ahadlsJTegmaAZULbuthCa0+s2A6mW3lXBPfSrcDPBSdlsJVWiFmwGeym4roQqtcDPAU9ltJeQD42o2A7yW3VZCP5mvYjPAa9ltJXShFWwGeC67rYQutGrNgFrKbiuR3NSjWDPA1znDSIQWoKko8oQOoSK2zM/8DI1E6GulmUsE/jaKXGFCjKlCeXbJz9jo7gc0+OXIcoWDKQyc8js4Ud1FDstr+T9TyaE+At0fVU6ZMNOpQnFm0u/4yIQGgH1r6dm1zuS9AA5EmVcCbxVKMy8FCRCp0AtYEOX1sY/SHYUVEB0B0BJlfh/8A/CzV4vZV4IGCnxXll/6+o71GNvbTxlMDwvgAAE9iPI7wx4TQBFAjsGZTW55t1T6RPmWnEaj0Wg0GpWo2+XdLkNDI22VZTrJjBMgHAQAMH5mojPtaTFRa8uoUfPWVeiBO0f7yRAZAPfZ2QnICWGMFhanr8U9b92EHhoaadtapotweLG7EJBrTfMDst5h9cpbt0qsskwnUeXFAgADw5vLeDrueesmNBPGvPoSyLNvo+at394C037vznQw7nnrvYnjERZxz1s/oYl/rcG7Ft+GzFu/NZrpPc++4DNxz1s3odvTYoKAXDU/AnLpYnIi7nnrJnQ+n90Swhh1e9G7hYPTnziLU95IW1m3Ut64tDKwPvzOZmflbwJ1A9QFUIXAcwy8liomn7m88bGPf+zQmHk1Go1Go9FoNBqNpiH5H0H4A/JU+P+TAAAAAElFTkSuQmCC"/>
+            </defs>
+         </svg>
+    </div>
+    <section style="margin-top: -110px;">
+        <h1>
+            you can add item
+        </h1>
+        <button>
+            ADD item
+        </button>
+    </section>
+    <section>
+        <div class="mk">
+            <div style="background-color: blue;">name</div>
+            <br>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius vero et delectus sit dolores! Expedita corporis, reiciendis officiis nisi quia quidem iure excepturi perspiciatis eos sunt libero consectetur, aut suscipit.</div>
+        </div>
+    </section>
+</body>
+</html>
